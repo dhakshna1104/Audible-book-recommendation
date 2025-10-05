@@ -5,8 +5,8 @@ import numpy as np
 import re
 
 # Load the datasets
-df1 = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible_Catlog.csv")
-df2 = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible_Catlog_Advanced_Features.csv")
+df1 = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible-book-recommendation\Audible_Catlog.csv")
+df2 = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible-book-recommendation\Audible_Catlog_Advanced_Features.csv")
 
 # Merge datasets on 'Book Name' and 'Author'
 merged_df = pd.merge(df1, df2, on=["Book Name", "Author"], suffixes=('_x', ''))
@@ -77,7 +77,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load your cleaned dataset
-df = pd.read_csv(r"C:\Users\vidhy\Downloads\Cleaned_Audible_Catalog.csv")
+df = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible-book-recommendation\Cleaned_Audible_Catalog.csv")
 
 # Set up visualization styles
 sns.set(style="whitegrid")
@@ -114,7 +114,7 @@ import seaborn as sns
 import numpy as np
 
 # Load cleaned dataset
-df = pd.read_csv(r"C:\Users\vidhy\Downloads\Cleaned_Audible_Catalog.csv")
+df = pd.read_csv(r"C:\Users\vidhy\Downloads\Audible-book-recommendation\Cleaned_Audible_Catalog.csv")
 
 # Combine 'Book Name', 'Description', and 'Genres' for better NLP features
 df['Text'] = (
@@ -242,5 +242,6 @@ plt.xlabel('Cluster', fontsize=12)
 plt.ylabel('Genre', fontsize=12)
 plt.tight_layout()
 plt.show()
+
 
 print("\n✅ Clustering analysis complete!")
