@@ -49,7 +49,7 @@ try:
     st.sidebar.success(f"✅ Loaded {len(df)} books")
 except Exception as e:
     st.error(f"❌ Error loading data: {str(e)}")
-    st.info("Please make sure 'Cleaned_Audible_Catalog.csv' exists in C:/Users/vidhy/Downloads/")
+    st.info("Please make sure 'Cleaned_Audible_Catalog.csv' exists in C:/Users/vidhy/Downloads/Audible-book-recommendation")
     st.stop()
 
 # Get all unique genres (excluding NONE)
@@ -297,3 +297,4 @@ elif option == '📊 EDA':
 st.sidebar.markdown("---")
 
 st.sidebar.info("💡 **Tip:** Use partial book titles for faster search!")
+
