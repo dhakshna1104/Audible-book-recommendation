@@ -16,7 +16,7 @@ st.set_page_config(
 # Load cleaned dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/vidhy/Downloads/Cleaned_Audible_Catalog.csv")
+    df = pd.read_csv("C:/Users/vidhy/Downloads/Audible-book-recommendation/Cleaned_Audible_Catalog.csv")
     
     # FIX: Convert Genres from string back to list if needed
     def safe_eval_list(x):
@@ -295,4 +295,5 @@ elif option == '📊 EDA':
 
 # Footer
 st.sidebar.markdown("---")
+
 st.sidebar.info("💡 **Tip:** Use partial book titles for faster search!")
