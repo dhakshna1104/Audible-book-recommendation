@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+*.log
+.DS_Store
+*.csv
+!Cleaned_Audible_Catalog.csv
